@@ -1,0 +1,132 @@
+
+.main-form{
+    flex: 1;
+    padding: 0px;
+    display: grid;
+
+}
+
+.main-heading{
+    height: 150px;
+    font-size: x-large;
+    padding-top: 80px;
+    text-align: center;
+    font-family: "Roboto", "Arial", sans-serif;
+    color:#fff;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+
+
+.contact-details{
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-form{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+.contact-form h2{
+    text-align: center;
+}
+
+.name-input, .email-input, .msg-input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+    gap: 10px;
+}
+
+.name-lb, .email-lb, .msg-lb{
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+#name, #email, #msg {
+    flex-shrink: 1;
+
+	font-size: 15px;
+	padding: 5px 10px;
+	width: 70%;
+	outline: none;
+	background: #f2f1f1;
+	color: #000000;
+	border: 1px solid #CEEBE6;
+	border-radius: 5px;
+	/* box-shadow: 3px 3px 2px 0px #E2E2E2; */
+	transition: .3s ease;
+}
+
+#msg{
+    font-size: 18px;
+    height: 100px;
+}
+
+@media (min-width: 1024px){
+    .main-heading{
+        height: 180px;
+        font-size: xx-large;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .contact-container{
+        flex-direction: row;
+        justify-content:space-around;
+        justify-items: center;
+        gap:10px;
+    }
+
+    #name, #email{
+        width: 300px;
+    } 
+    
+    #msg {
+        width: 300px;
+        height: 200px;
+    }
+
+    
+    .contact-container{
+        padding-top: 30px;
+    }
+}
+
+#name:focus ,#email:focus, #msg:focus {
+	background: #dff6ef;
+	border: 1px solid #5a8a82;
+	border-radius: 10px;
+}
+
+#name::placeholder, #email::placeholder, #msg::placeholder {
+	color: #a5a3a3;
+}
+
+.submit-bt{
+    text-align: end;
+}
+
+#submit-bt{
+    font-family: georgia;
+    color: #FFFFFF !important;
+    font-size: 15px;
+    width: 30%;
+    /* text-shadow: 1px 1px 0px #DEDEDE; */
+    /* box-shadow: 2px 2px 0px #8C8F8B; */
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid #737572;
+    background: #404140;
+}
+
+#submit-bt:hover{
+    background: #737572;
+}
